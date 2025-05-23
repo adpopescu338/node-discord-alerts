@@ -1,0 +1,30 @@
+{
+  "name": "node-discord-alerts",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "description": "A simple library to send alerts to Discord channels.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adpopescu338/node-discord-alerts.git"
+  },
+  "author": {
+    "name": "Alexandru Popescu",
+    "email": "ad.popescu338@yahoo.com"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts",
+    "test": "npx tsx src/tests/test.mts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.21",
+    "tsup": "^8.5.0",
+    "typescript": "~5.8.3"
+  }
+}
